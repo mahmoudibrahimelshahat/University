@@ -1,6 +1,6 @@
 # University
 
-Project Link : https://mahmoudanguoouniversity.surge.sh/
+Project Link : http://mahmoudanguoouniversity.surge.sh/ or https://mahmoudanguoouniversity.surge.sh/
 
 Tools : Angular - Html - css - bootstrap
 
