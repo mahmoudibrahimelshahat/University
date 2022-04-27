@@ -1,0 +1,25 @@
+<div class="headd">
+    <h1>STUDENT REVIEWS</h1>
+    <p>Considering primary motivation for the generation of narratives is a useful concept</p>
+</div>
+<div class="ocontent text-center">
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide *ngFor="let item of items">
+            <div class="call">
+                <img [src]="item.img">
+            </div>
+            <div class="comm">
+                <h5>Aliana D’suza</h5>
+                <div class="cl-client-rating">
+                    <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i
+                        class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i
+                        class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>
+                    Tempor non elit nec augue nec gravida et sed velit. Aliquam tempus eget lorem ut malesuada.
+                    Phasellus dictum est sed libero posuere dignissim.
+                </p>
+            </div>
+        </ng-template>
+    </owl-carousel-o>
+</div>

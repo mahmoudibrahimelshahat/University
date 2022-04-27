@@ -1,0 +1,140 @@
+<div class="container-fluid text-center">
+    <div class="container">
+        <h4 class="title">Cart</h4>
+        <div class="linkk">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link kkk" routerLink="" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}">Home </a>
+                </li>
+                <li class="slash"> // </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/pages/cart" routerLinkActive="active">Our Cart</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- ------------ -->
+<div class="container-fluid-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <span class="soo">x</span>
+                            </th>
+                            <td><img src="assets/shop/sh1.jpg" alt="">
+                                <div class="img-title">
+                                    <h5>Jersey</h5>
+                                    <span>Men’s Football</span>
+                                </div>
+                            </td>
+                            <td>$20
+                            </td>
+                            <td>
+                                <div class="k" let i = "amount">
+                                    <button class="boo" (click)="addItem()">+</button>
+                                    <span  class="lol1">{{amount}}</span>
+                                    <button class="boo" (click)="removeItem()" >-</button>
+                                </div>
+                            </td>
+                            <td>$20.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <span class="soo">x</span>
+                            </th>
+                            <td><img src="assets/shop/sh2.jpg" alt="">
+                                <div class="img-title">
+                                    <h5>Cleats</h5>
+                                    <span>Men’s Football</span>
+                                </div>
+                            </td>
+                            <td>$20
+                            </td>
+                            <td>
+                                <div class="k" let i = "amoun">
+                                    <button class="boo" (click)="add()">+</button>
+                                    <span  class="lol1">{{amoun}}</span>
+                                    <button class="boo" (click)="remove()" >-</button>
+                                </div>
+                            </td>
+                            <td>$20.00
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <span class="soo">x</span>
+                            </th>
+                            <td><img src="assets/shop/sh3.jpg" alt="">
+                                <div class="img-title">
+                                    <h5>Backpack</h5>
+                                    <span>Club Team</span>
+                                </div>
+                            </td>
+                            <td>$20
+                            </td>
+                            <td>
+                                <div class="k" let i = "amou">
+                                    <button class="boo" (click)="aja()">+</button>
+                                    <span  class="lol1">{{amou}}</span>
+                                    <button class="boo" (click)="rej()" >-</button>
+                                </div>
+                            </td>
+                            <td>$20.00
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------- -->
+<div class="container-fluid-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Have A Coupon Code?</h1>
+                <div class="colg">
+                    <input type="text" name="coupon"placeholder="Coupon Code">
+                    <button mat-button>Apply Coupon</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1>Your Order</h1>
+                <table>
+                    <tbody><tr>
+                        <td><b>Product</b></td>
+                        <td><b>Total</b></td>
+                    </tr>
+                    <tr class="row-bold">
+                        <td>Subtotal</td>
+                        <td>$ 158.00</td>
+                    </tr>
+                    <tr class="row-bold">
+                        <td>Total</td>
+                        <td>$ 158.00</td>
+                    </tr>
+                </tbody></table>
+                <button mat-button class="final-button"  routerLink="/pages/checkout">Proceeed To Checkout</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------- -->
+<div class="container-fluid-3">
+    <div class="container">
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let photo of photos">
+                <div class="call">
+                    <img [src]="photo.img">
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>

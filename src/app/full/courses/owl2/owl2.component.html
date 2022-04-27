@@ -1,0 +1,46 @@
+<div class="headd">
+    <h1>STUDENT REVIEWS</h1>
+    <p>Considering primary motivation for the generation of narratives is a useful concept</p>
+</div>
+<owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let course of courses">
+        <div class="owo">
+            <div class="card">
+                <img class="card-img-top" [src]="course.img">
+                <div class="card-body">
+                    <div class="before-header">
+                        <h5 class="card-title">{{course.title}} </h5>
+                        <div class="header">
+                            <div class="header-icons">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <span>28-06-2017 </span>
+                            </div>
+                            <div class="header-icons2">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span> 4 YEAR</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-text">{{course.smalltitle}} </p>
+                    <p>Cras ultricies lacus consectetur, consectetur <br> scelerisque arcu.Curabitur Aenean
+                        egestas a <br> Nullam augue augue.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="footer-icons">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <span>70 SEATS</span>
+                    </div>
+                    <div class="footer-icons2">
+                        <a><span> APPLY NOW</span>
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="overlay">
+                </div>
+                <div class="circle">
+                    <p>$450</p>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</owl-carousel-o>

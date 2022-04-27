@@ -1,0 +1,126 @@
+.container-fluid{
+    background-image: url('src/assets/photos/6.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    padding: 50px 0 50px 0;
+}
+.cont{   
+     display: inline-flex;
+}
+.cont svg{
+    width: 70px ;
+    padding-right: 20px;
+    color: red;
+}
+.numeth1{
+    padding-top: 20px;
+    color: #fff;
+}
+.numeth1 h2{
+    font-size: 50px;
+}
+/* ------------ */
+.call{
+    margin: 0 10px 0 10px;
+    overflow: hidden;
+}
+.sph2{
+    padding: 50px 0 30px 0 ;
+}
+.sph2 span{
+    display: block;
+    font-size: 18px;
+    line-height: 34px;
+    color: #ff3115;
+    font-weight: 600;
+}
+.sph2 h2{   
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #212121;
+        font-weight: 700;
+        line-height: 40px;
+        margin: 0;   
+}
+.call img{
+    position: relative;
+}
+.owl-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 73px 133px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.owl-content h4{
+    margin: 0;
+    font-size: 23px;
+    margin-bottom: 0;
+    margin-top: 12px;
+    font-weight: 600;
+}
+.owl-content svg{
+    width: 50px;
+    visibility: hidden;
+}
+.owl-content:hover  svg{
+    visibility: visible;
+    transition: 0.5s;
+}
+.owl-content:hover h4{
+    color: black;
+}
+.owl-content:hover span{
+    color: black;
+}
+.owl-content:hover{
+    background-color: #dadbdad9
+}
+.owl-content:hover .svgg{
+    visibility: visible;
+    transition: 0.5s;
+
+}
+.svgg{
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: red;
+    visibility: hidden;
+}
+.container-fluid-1{
+    margin-bottom: 120px;
+}
+.readon2 {
+    font-size: 14px;
+    border: 1px solid #ff3115;
+    background: #ff3115;
+    display: inline-block;
+    padding: 0 35px;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 35px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.readon2:hover{
+    transition: 0.5s;
+    background-color: #E41F05;
+}
+/* ------------- */
+@media (min-width: 320px) and (max-width: 575px){ 
+.owl-content{
+    padding: 73px 101px;
+}
+}

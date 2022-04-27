@@ -1,0 +1,249 @@
+<div class="container-fluid text-center">
+    <div class="container">
+        <h4 class="title">Check Out</h4>
+        <div class="linkk">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link kkk" routerLink="" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}">Home </a>
+                </li>
+                <li class="slash"> // </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/pages/checkout" routerLinkActive="active">Check Out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- ----- -->
+<div class="container-fluid-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h3 class="title-bg">Billing Details</h3>
+                <div class="check-out-box">
+                    <form #registerationForm="ngForm" (submit)="onSubmit(registerationForm)">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group" [class.error-form]="username.invalid && username.touched">
+                                    <label for="fname">First Name*</label>
+                                    <input id="fname" class="form-control" type="text" class="form-control"
+                                        name="username" ngModel #username="ngModel" placeholder="Your First Name"
+                                        required minlength="3">
+                                    <div *ngIf="username.errors && username.invalid && username.touched"
+                                        class="text-danger">
+                                        <small *ngIf="username.errors.required">Your name is required</small>
+                                        <small *ngIf="username.errors.minlength">Mimun length is 3 characters</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="form-group" [class.error-form]="lname.invalid && lname.touched">
+                                    <label for="lname">Last Name*</label>
+                                    <input id="lname" class="form-control" type="text" class="form-control" name="lname"
+                                        ngModel #lname="ngModel" placeholder="Your Last Name" required minlength="3">
+                                    <div *ngIf="lname.errors && lname.invalid && lname.touched" class="text-danger">
+                                        <small *ngIf="lname.errors.required">Your Last name is required</small>
+                                        <small *ngIf="lname.errors.minlength">Mimun length is 3 characters</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group" [class.error-form]="comp.invalid && comp.touched">
+                                    <label for="comp">Company</label>
+                                    <input id="comp" name="comp" class="form-control" type="text" ngModel
+                                        #comp="ngModel" placeholder="Your company" required minlength="5">
+                                    <div *ngIf="comp.errors && comp.invalid && comp.touched" class="text-danger">
+                                        <small *ngIf="comp.errors.required">Your Company is required</small>
+                                        <small *ngIf="comp.errors.minlength">Mimun length is 5 characters</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group" [class.error-form]="email.invalid && email.touched">
+                                    <label for="email">Your email</label>
+                                    <input type="email" id="email" placeholder="Please leave your email"
+                                        class="form-control" name="email" ngModel #email="ngModel" required
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                                    <div *ngIf="email.errors && email.invalid && email.touched" class="text-danger">
+                                        <small *ngIf="email.errors.required">Your email is required</small>
+                                        <small *ngIf="email.errors.pattern">Please write a valid email</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group" [class.error-form]="telee.invalid && telee.touched">
+                                    <label for="telee">Your Phone Number</label>
+                                    <input type="tel" id="telee" placeholder="Please Write your Number Phone"
+                                        class="form-control" name="tele" ngModel #telee="ngModel" required
+                                        pattern="[789][0-9]{9}">
+                                    <div *ngIf="telee.errors && telee.invalid && telee.touched" class="text-danger">
+                                        <small *ngIf="telee.errors.required">Your Number Phone is required</small>
+                                        <small *ngIf="telee.errors.pattern">Must Write A Correct Number Phone
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group" [class.error-form]="Country.invalid && Country.touched">
+                                    <label for="Country">Your Country</label>
+                                    <select id="Country" class="form-control" name="Country" ngModel #Country="ngModel"
+                                        required>
+                                        <option value="">Select Country</option>
+                                        <option value="1">Egypt</option>
+                                        <option value="2">German</option>
+                                        <option value="0">Marroc</option>
+                                    </select>
+                                    <div *ngIf="Country.errors && Country.invalid && Country.touched"
+                                        class="text-danger">
+                                        <small *ngIf="Country.errors.required">Your Country is required</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group" [class.error-form]="address.invalid && address.touched">
+                                    <label for="address">Address*</label>
+                                    <input id="address" name="address" placeholder="Your address" class="form-control"
+                                        type="text" #address="ngModel" required ngModel>
+                                    <div *ngIf="address.errors && address.invalid && address.touched"
+                                        class="text-danger">
+                                        <small *ngIf="address.errors.required">Your address is required</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group" [class.error-form]="street_ad.invalid && street_ad.touched">
+                                    <label for="street_ad">Street addreess</label>
+                                    <input id="street_ad" placeholder="Apartment, suite, unit etc. (optional)"
+                                        name="street_ad" #street_ad="ngModel" required class="form-control" type="text"
+                                        ngModel>
+                                    <div *ngIf="street_ad.errors && street_ad.invalid && street_ad.touched"
+                                        class="text-danger">
+                                        <small *ngIf="street_ad.errors.required">Your Street address is required</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group" [class.error-form]="city.invalid && city.touched">
+                                    <label for="city">Town/City*</label>
+                                    <input id="city" name="city" class="form-control" type="text"
+                                        placeholder="Your City" #city="ngModel" required ngModel>
+                                    <div *ngIf="city.errors && city.invalid && city.touched" class="text-danger">
+                                        <small *ngIf="city.errors.required">Your City is required</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group" [class.error-form]="zip.invalid && zip.touched">
+                                    <label for="zip">Postcode/ZIP*</label>
+                                    <input id="zip" ngModel placeholder="Write Zip" name="zip" required #zip="ngModel"
+                                        class="form-control" type="text">
+                                    <div *ngIf="zip.errors && zip.invalid && zip.touched" class="text-danger">
+                                        <small *ngIf="zip.errors.required">Your Zip is required</small>
+                                        <small *ngIf="zip.errors.pattern">Must Write A Correct Zip </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="1">Create an account?</label>
+                        </div>
+                        <div class="form-group">
+                            <button class="hj" mat-flat-button color="primary"
+                                [disabled]="registerationForm.invalid">Order NOw
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- .check-out-box end -->
+                <div class="afterform">
+                    <h4>SHIPPING DETAILS</h4>
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label for="checkbox"> Ship to a different address</label>
+                    </div>
+                    <div class="form-group mb-0">
+                        <label class="last" for="not">Order Notes</label>
+                        <textarea _ngcontent-yqw-c68="" name="message" id="message" rows="1" placeholder="Order Notes"
+                            class="form-control"></textarea>
+                    </div>
+                </div>
+                <!-- .shipping-box end -->
+            </div>
+
+            <!-- -------- -->
+            <!-- end of first col -->
+            <!-- start of last col -->
+            <div class="col-md-4">
+                <h3>Your Order</h3>
+                <div class="img-co">
+                    <img src="assets/shop/sh1.jpg">
+                    <span>x1</span>
+                    <h5>$49.00</h5>
+                </div>
+                <div class="second-di">
+                    <div class="seccon1">
+                        <span class="num1">Subtotal </span>
+                        <span>$49.00</span>
+                    </div>
+                    <h4 class="outspan">Shipping</h4>
+                    <div class="seccon1">
+                        <input type="radio" name="order1" id="order1">
+                        <label for="order1">Standard</label>
+                        <span>$10.00</span>
+                        <div class="insecon1">
+                            <input type="radio" name="order2" id="order2">
+                            <label for="order2">Express</label>
+                            <span>$19.50</span>
+                        </div>
+                    </div>
+                    <div class="lastcon1">
+                        <span>Total</span>
+                    </div>
+                </div>
+                <div class="paymentdiv">
+                    <div class="pay1">
+                        <input type="radio" name="pay" id="pay">
+                        <label for="pay">Check payments</label>
+                        <div class="pay1inside">
+                            <p>Please send a check to Store Name, Store Street, <br> Store Town, Store State / County,
+                                Store Postcode.</p>
+                        </div>
+                        <div class="pay1inside2">
+                            <input type="radio" name="paypal" id="paypal">
+                            <label for="paypal">Paypal
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button mat-button> Order Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------- -->
+<div class="container-fluid-3">
+    <div class="container">
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let photo of photos">
+                <div class="call">
+                    <img [src]="photo.img">
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>

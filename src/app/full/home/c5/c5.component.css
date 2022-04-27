@@ -1,0 +1,91 @@
+.container-fluid img{
+    width: 45%;
+    border-radius: 5px;
+}
+.container-fluid{
+    background-color: #F2F2F2;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+.all{
+    padding: 54px 36px 9px 54px;
+    background-color: #fff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.media-cont{
+    margin: 10px 16px;
+}
+.media-cont span{
+    font-size: 15px;
+    color: #505050;
+    font-weight: 500;
+    line-height: 26px;
+    display: block;
+    padding-bottom: 8px;
+}
+.media-cont h4{
+    transition: all 0.3s ease 0s;
+    text-decoration: none !important;
+    outline: none !important;
+    color: #212121;
+    font-size: 18px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    padding-bottom: 18px;
+}
+.media-cont button{
+    border: 1px solid red;
+    color: red;
+    border-radius: 21px;
+    outline: 0;
+}
+.container-fluid .row{
+    margin-bottom: 50px;
+}
+.head h2{
+    padding-bottom: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #212121;
+    margin: 0;
+}
+.number{
+    padding: 47px 40px;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+}
+.number .num{
+    color: red;
+    font-size: 29px;
+    font-weight: 600;
+}
+.number .date{
+    font-size: 20px;
+    font-weight: 200;
+}
+.media-cont h2{
+    color: black;
+}
+.media-cont a{
+    text-decoration: none;
+}
+.media-cont h2:hover{
+    color: red;
+}
+.all2{
+        padding: 54px 36px 60px 54px;
+        background-color: #fff;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+}
+.container-fluid-1
+{
+    background-color: #F2F2F2;
+    padding-bottom: 200px;
+    
+}
+.container-fluid-1 img{
+    width: 150px;
+}

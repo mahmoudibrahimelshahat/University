@@ -1,0 +1,274 @@
+.container-fluid{
+    background-image: url('src/assets/about/a1.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 186px;
+    /* padding-bottom: 125px; */
+}
+.title{
+    margin: 80px 0 100px;
+    font-size: 36px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.linkk ul{
+    list-style: none;
+    color: #fff;
+    display: inline-flex;
+}
+.linkk li{
+    padding-right: 10px;
+}
+.slash{
+    padding-top: 7px;
+}
+.active{
+    color: red;
+}
+a{
+    color: #fff;
+}
+.kkk:hover{
+    color: red;
+    transition: 0.5s;
+}
+/* --------- */
+.container-fluid-1{
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+.col-md-8{
+    margin-bottom: 55px;
+}
+button{
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    margin-right: 50px;
+    outline: none;
+    font-weight: 500;
+}
+.container-fluid-1 button.active-btn{
+    color: red;
+}
+.card{
+    margin-bottom: 40px;
+    position: relative;
+}
+.card-title{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+.header{
+    display: flex;
+}
+.header-icons2{
+    margin-left: 70px;
+}
+.card-img-top{
+    position: relative;
+}
+.before-header{
+    position: absolute;
+    bottom: 200px;
+    z-index: 2;
+}
+.card-title:hover{
+    color: red;
+    transition: 0.5s;
+}
+.header-icons , .header-icons2{
+    color: #fff;
+}
+.card-text{
+    font-size: 20px;
+    font-weight: 700;
+}
+.card-text:hover{
+    color: red;
+    transition: 0.5s;
+}
+.card-footer{
+    display: flex;
+    font-size: 16px;
+}
+.footer-icons{
+    margin-right: 115px;
+}
+.footer-icons2 a{
+    color: black;
+}
+.footer-icons2 a:hover{
+    color: red;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.overlay{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    position: absolute;
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 58%;
+}
+.circle{
+    position: absolute;
+    color: #fff;
+    background-color: red;
+    padding: 10px 10px 4px 10px;
+    display: inline-block;
+    border-radius: 100%;
+    top: 230px;
+    right: 24px;
+}
+.pagination{
+    margin: 20px;
+    background-color: transparent;
+    border-color: #cccc;
+    z-index: 2;
+}
+.pagination i{
+    color: black;
+    background-color: transparent;
+} 
+.pagination a{
+    color: red;
+    background-color: transparent;
+    border-color: #cccc;
+}
+/* ------ */
+.container-fluid-3{
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+.container-fluid-3 img{
+    width: 150px;
+}
+/* ----------- */
+@media (min-width: 320px) and (max-width:359px){
+   .col-md-8 button{
+       margin-right: 0;
+   }
+   .before-header{
+    bottom: 274px;
+   }
+   .overlay{
+    height: 48%;
+   }
+   .circle{
+    top: 190px;
+   }
+   .footer-icons{
+    margin-right: 50px;
+   }
+}
+@media (min-width: 360px) and (max-width:374px){
+    .col-md-8 button{
+        margin-right: 0;
+    }
+    .before-header{
+        bottom: 214px;
+    }
+    .overlay{
+     height: 56%;
+    }
+    .circle{
+        top: 218px;
+    }
+    .footer-icons{
+     margin-right: 50px;
+    }
+}
+@media (min-width: 375px) and (max-width:410px){
+    .col-md-8 button{
+        margin-right: 0;
+    }
+    .before-header{
+        bottom: 202px;
+    }
+    .overlay{
+        height: 57%;
+    }
+    .circle{
+        top: 226px;
+    }
+    .footer-icons{
+     margin-right: 50px;
+    }
+}
+@media (min-width: 411px) and (max-width: 575px) { 
+    .col-md-8 button{
+        margin-right: 0;
+    }
+    .before-header{
+        bottom: 212px;
+    }
+    .overlay{
+        height: 60%;
+    }
+    .circle{
+        top: 253px;
+    }
+    .footer-icons{
+     margin-right: 50px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+    .col-md-8 button{
+        margin-right: 0;
+    }
+    .before-header{
+        bottom: 215px;
+    }
+    .overlay{
+        height: 66%;
+    }
+    .circle{
+        top: 345px;
+    }
+    .footer-icons{
+        margin-right: 260px;
+    }
+}
+@media(min-width: 768px) and (max-width: 991px) {
+    .col-md-8 button{
+        margin-right: 0;
+    }
+    .before-header{
+        bottom: 288px;
+    }
+    .overlay{
+        height: 38%;
+    }
+    .circle{
+        top: 126px;
+    }
+    .header-icons2{
+        margin-left: 14px;
+    }
+    .footer-icons{
+     margin-right: 50px;
+    }
+} 
+@media (min-width: 992px) and (max-width: 1199px){ 
+    .col-md-8 button{
+        margin-right: 0;
+    }
+    .before-header{
+     bottom: 274px;
+    }
+    .overlay{
+     height: 48%;
+    }
+    .circle{
+     top: 190px;
+    }
+    .footer-icons{
+     margin-right: 50px;
+    }
+}
+

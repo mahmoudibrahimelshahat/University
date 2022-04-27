@@ -1,0 +1,99 @@
+<div class="container-fluid">
+    <div class="container text-center">
+        <div class="sph2 text-center">
+            <span class="primary-color">Our Teacherd</span>
+            <h2> MEET OUR EXPERT TEACHER </h2>
+        </div>
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let item of items">
+                <div class="call">
+                    <img [src]="item.img" alt="">
+                    <div class="owl-content">
+                        <h4>{{item.title}}</h4>
+                        <span>{{item.titlesmall}}</span>
+                    </div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>
+<!-- ------- -->
+<div class="container-fluid-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="countdown-part">
+                    <div class="content-part">
+                        <span class="sub-title"> Register Now</span>
+                        <h2 class="title">Get 50+ Courses<br>
+                            Free Access</h2>
+                        <p class="description">
+                            We create Premium WordPress themes &amp; plugins for more than three years.<br>
+                            Our team goal is to reunite the elegance of unique.
+                        </p>
+                    </div>
+                    <div class="counter-wrap">
+                        <div class="timecounter-inner">
+                            <countdown  [text]="text"
+                                units="Days | Hours | Minutes | Seconds" end="July 22, 2030"></countdown>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="befform">
+                    <h4>Register now for getting 50+
+                        courses free access. This offer
+                        for limited time.</h4>
+                </div>
+                <form #registerationForm="ngForm" (submit)="onSubmit(registerationForm)">
+                    <div class="form-group" [class.error-form]="name.invalid && name.touched">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" placeholder="Please leave your name" class="form-control"
+                            name="username" ngModel #name="ngModel" required minlength="3">
+                        <div *ngIf="name.errors && name.invalid && name.touched" class="text-danger">
+                            <small *ngIf="name.errors.required">Your name is required</small>
+                            <small *ngIf="name.errors.minlength">Mimun length is 3 characters</small>
+                        </div>
+                    </div>
+                    <div class="form-group" [class.error-form]="email.invalid && email.touched">
+                        <label for="email">Your email</label>
+                        <input type="email" id="email" placeholder="Please leave your email" class="form-control"
+                            name="email" ngModel #email="ngModel" required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <div *ngIf="email.errors && email.invalid && email.touched" class="text-danger">
+                            <small *ngIf="email.errors.required">Your email is required</small>
+                            <small *ngIf="email.errors.pattern">Please write a valid email</small>
+                        </div>
+                    </div>
+                    <div class="form-group position-relative" [class.error-form]="password.invalid && password.touched">
+                        <label for="password">Your password</label>
+                        <input type="password" id="password" placeholder="Please leave your password"
+                            class="form-control" name="password" ngModel #password="ngModel" required
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <div *ngIf="password.errors && password.invalid && password.touched" class="text-danger">
+                            <small *ngIf="password.errors.required">Your password is required</small>
+                            <small *ngIf="password.errors.pattern">Must contain at least one number and one uppercase
+                                and lowercase
+                                letter, and at least 8 or more characters</small>
+                        </div>
+                    </div>
+                    <div class="form-group" [class.error-form]="telee.invalid && telee.touched">
+                        <label for="telee">Your Phone Number</label>
+                        <input type="tel" id="telee" placeholder="Please Write your Number Phone" class="form-control"
+                            name="tele" ngModel #telee="ngModel" required pattern="[789][0-9]{9}">
+                        <div *ngIf="telee.errors && telee.invalid && telee.touched" class="text-danger">
+                            <small *ngIf="telee.errors.required">Your Number Phone is required</small>
+                            <small *ngIf="telee.errors.pattern">Must Write A Correct Number Phone</small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="hj" mat-flat-button color="primary" [disabled]="registerationForm.invalid">GET IT
+                            NOW</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

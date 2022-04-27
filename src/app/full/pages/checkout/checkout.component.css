@@ -1,0 +1,140 @@
+.container-fluid{
+    background-image: url('src/assets/about/a1.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 186px;
+    /* padding-bottom: 125px; */
+}
+.title{
+    margin: 80px 0 100px;
+    font-size: 36px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.linkk ul{
+    list-style: none;
+    color: #fff;
+    display: inline-flex;
+}
+.linkk li{
+    padding-right: 10px;
+}
+.slash{
+    padding-top: 7px;
+}
+.active{
+    color: red;
+}
+a{
+    color: #fff;
+}
+.kkk:hover{
+    color: red;
+    transition: 0.5s;
+}
+/* ------------- */
+.error-form input,
+.error-form select {
+    border: 1px solid #F00;
+}
+.container-fluid-1{
+    padding-top: 70px;
+}
+.container-fluid-1 h3{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+button{
+    margin-bottom: 40px;
+}
+.afterform h4{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+textarea{
+    border-radius: 3px;
+    margin-top: 15px;
+    height: 166px;
+    max-height: 250px;
+}
+.last{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 45px;
+}
+/* ------ */
+.container-fluid-1{
+    margin-bottom: 35px;
+}
+.img-co{
+    display: flex;
+}
+.img-co span , h5{
+    padding: 42px 42px;
+    font-weight: 700;
+    font-size: 17px;
+}
+.img-co img{
+    width: 110px;
+}
+.second-di{
+    margin-top: 25px;
+    border: 1px solid;
+}
+.seccon1{
+    padding: 20px;
+    border-bottom: 1px solid;
+}
+.seccon1 .num1{
+    margin-right: 170px;
+}
+.seccon1 label{
+    margin-right: 160px;
+    padding-left: 10px;
+}
+.outspan{
+    padding: 20px 0 0 20px;
+}
+.lastcon1{
+    padding: 20px;
+}
+.pay1{
+    margin-top: 30px;
+    border: 1px solid;
+    padding: 20px;
+}
+.pay1 label{
+    padding-left: 11px;
+}
+.pay1inside{
+    margin: 10px 0;
+    line-height: 2;
+    border-bottom: 1px solid;
+}
+.col-md-4 button{
+    margin-top: 20px;
+    border: 1px solid red;
+    outline: none;
+    background-color: red;
+    color: #fff;
+    width: 200px;
+    margin-left: 55px;
+}
+.col-md-4 button:hover{
+    background-color: black;
+    color: #fff;
+    border-color: black;
+    transition: 0.5s;
+}
+/* --------- */
+.container-fluid-3{
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+.container-fluid-3 img{
+    width: 150px;
+}

@@ -1,0 +1,82 @@
+<div class="container-fluid text-center">
+    <div class="container">
+        <h4 class="title">OUR TEACHERS</h4>
+        <div class="linkk">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link kkk" routerLink="" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}">Home </a>
+                </li>
+                <li class="slash"> // </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/pages/teachers" routerLinkActive="active">Our Teachers</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- ----------- -->
+<div class="container-fluid-1 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <button [class.active-btn]="selectedKey == 'ALL'" (click)="selectedKey = 'ALL'">All</button>
+                <button [class.active-btn]="selectedKey == 'SCIENCE'" (click)="selectedKey = 'SCIENCE'">SCIENCE</button>
+                <button [class.active-btn]="selectedKey == 'BUSINESS STUDIES'"
+                    (click)="selectedKey = 'BUSINESS STUDIES'">BUSINESS
+                    STUDIES</button>
+                <button [class.active-btn]="selectedKey == 'ARTS'" (click)="selectedKey = 'ARTS'">ARTS</button>
+                <button [class.active-btn]="selectedKey == 'DIPLOMA'" (click)="selectedKey = 'DIPLOMA'">DIPLOMA</button>
+            </div>
+        </div>
+        <div class="row r00">
+            <ng-container *ngFor="let portofolio of portofolios">
+                <div class="col-md-3" *ngIf="portofolio.type == selectedKey || selectedKey == 'ALL'">
+                    <div class="card">
+                        <img class="card-img-top" [src]="portofolio.image">
+                        <div class="card-body">
+                            <h5 class="card-title">{{portofolio.name}} </h5>
+                            <p class="card-text">{{portofolio.job}} </p>
+                        </div>
+                            <div class="inside">
+                                <div class="all">
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </ng-container>
+          </div>
+          <ul class="pagination">
+            <li class="page-item">
+                <a href="#" class="page-link" aria-label="Previous">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">1</a>
+            </li>
+            <li class="page-item active">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link" aria-label="Next">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>   
+          <!-- -*-------- -->
+          <div class="container-fluid-2">
+            <div class="container">
+                <owl-carousel-o [options]="customOptions">
+                    <ng-template carouselSlide *ngFor="let item of items">
+                        <div class="call">
+                            <img [src]="item.img">
+                        </div>
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+        </div>

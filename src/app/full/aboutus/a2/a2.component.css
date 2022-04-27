@@ -1,0 +1,162 @@
+.container-fluid{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.header h2{
+    font-size: 30px;
+    line-height: normal;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+    position: relative;
+}
+.header h2::after{
+    content: "";
+    position: absolute;
+    width: 150px;
+    border: 2px solid red;
+    top: 41px;
+    left: 1px;
+}
+p{
+    margin: 0 0 26px;
+    font-size: 16px;
+    color: #505050;
+}
+ .container-fluid img{
+    width: 100%;
+}
+/* ------- */
+.container-fluid-1{
+    padding-bottom: 120px;
+}
+.container-fluid-1 img{
+    width: 100%;
+    position: relative;
+}
+.modal-content {
+    background: transparent ;
+    border: none;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    float: none;
+}
+.modal-body{
+    width: 1050px;
+    height: auto;
+    position: relative;
+    margin-top: 130px;
+}
+.kk{
+    position: absolute;
+    top: 100px;
+    color: #fff;
+    right: -300px;
+}
+.kk:focus{
+        outline: 0;
+        box-shadow: none !important;
+}
+.container-fluid-1 svg{
+    width: 30px;
+    color: #fff;
+}
+.owner{
+    border: 1px solid #fff;
+    padding: 12px 15px;
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 160px;
+    left: 245px;
+}
+/* --------------- */
+@media (min-width: 320px) and (max-width:359px){
+    iframe{
+        width: 272px;
+        height: 272px;
+    }
+    .kk{
+        top: 100px;
+        right: 0;
+    }
+    .owner{
+        top: 84px;
+        left: 117px;
+    }
+   
+}
+@media (min-width: 360px) and (max-width:374px){
+    iframe{
+        width: 272px;
+        height: 272px;
+    }
+    .kk{
+        top: 100px;
+        right: 0;
+    }
+    .owner{
+        top: 84px;
+        left: 132px;
+    }
+}
+@media (min-width: 375px) and (max-width:410px){
+    iframe{
+        width: 272px;
+        height: 272px;
+    }
+    .kk{
+        top: 100px;
+        right: 0;
+    }
+    .owner{
+    top: 88px;
+    left: 177px;
+    }
+}
+@media (min-width: 411px) and (max-width: 575px) { 
+    iframe{
+        width: 300px;
+        height: 300px;
+    }
+    .kk{
+        top: 100px;
+        right: 0;
+    }
+    .owner{
+        left: 164px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+    iframe{
+        width: 482px;
+    }
+    .kk{
+        top: 100px;
+        right: 0;
+    }
+}
+@media(min-width: 768px) and (max-width: 991px) {
+   .owner{
+    top: 78px;
+    left: 137px;
+   }
+    iframe{
+        width: 700px;
+    }
+    .kk{
+        top: 100px;
+        right: -116px;
+    }
+} 
+@media (min-width: 992px) and (max-width: 1199px){ 
+    .kk{
+        right: -238px;
+    }
+    .owner{
+    top: 108px;
+    left: 232px;
+    }
+}

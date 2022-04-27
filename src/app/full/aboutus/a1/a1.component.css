@@ -1,0 +1,64 @@
+.container-fluid{
+    background-image: url('src/assets/about/a1.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 186px;
+    /* padding-bottom: 125px; */
+}
+.title{
+    margin: 80px 0 100px;
+    font-size: 36px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.linkk ul{
+    list-style: none;
+    color: #fff;
+    display: inline-flex;
+}
+.linkk li{
+    padding-right: 10px;
+}
+.slash{
+    padding-top: 7px;
+}
+.active{
+    color: red;
+}
+a{
+    color: #fff;
+}
+.kkk:hover{
+    color: red;
+    transition: 0.5s;
+}
+/* -------------- */
+.container-fluid-1{
+    padding-top: 100px;
+}
+.container-fluid-1 img{
+    width: 100%;
+}
+.header h2{
+    font-size: 30px;
+    line-height: normal;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+    position: relative;
+}
+.header h2::after{
+    content: "";
+    position: absolute;
+    width: 150px;
+    border: 2px solid red;
+    top: 41px;
+    left: 1px;
+}
+p{
+    margin: 0 0 26px;
+    font-size: 16px;
+    color: #505050;
+}

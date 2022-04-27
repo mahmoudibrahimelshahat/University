@@ -1,0 +1,92 @@
+.headd{
+    position: relative;
+    margin-bottom: 50px;
+}
+.headd h1::after{
+    content: "";
+    width: 129px;
+    border: 2px solid red;
+    position: absolute;
+    bottom: 27px;
+    left: 8px;
+}
+.comm{
+    position: relative;
+    background-color: #fff;
+    margin-right: 10px;
+    padding: 182px 35px 32px;
+}
+.ocontent img{
+    width: 150px;
+    display: inline-block;
+    border-radius: 100%;
+}
+.call{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 200px;
+}
+i{
+    color: red;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+/* ---------- */
+@media (min-width: 320px) and (max-width:359px){
+    .call{
+        left: 80px;
+    }
+    .headd h1::after{
+        bottom: 48px;
+    left: 35px;
+    }
+}
+@media (min-width: 360px) and (max-width:374px){
+    .call{
+        left: 80px;
+    }
+    .headd h1::after{
+        bottom: 49px;
+         left: 32px;
+    }
+}
+@media (min-width: 375px) and (max-width:410px){
+    .call{
+        left: 80px;
+    }
+    .headd h1::after{
+        bottom: 48px;
+    left: 35px;
+    }
+}
+@media (min-width: 411px) and (max-width: 575px) { 
+    .call{
+        left: 110px;
+    }
+    .headd h1::after{
+        bottom: 48px;
+    left: 35px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+    .call{
+        left: 110px;
+    }
+    .headd h1::after{
+        bottom: 48px;
+    left: 35px;
+    }
+}
+@media(min-width: 768px) and (max-width: 991px) {
+.call{
+    left: 85px;
+
+}
+} 
+@media (min-width: 992px) and (max-width: 1199px){ 
+ .call{
+    left: 155px;
+ }
+}

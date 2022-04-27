@@ -1,0 +1,174 @@
+.container-fluid{
+    background-image: url('src/assets/about/a6.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    padding: 70px 0 70px 0;
+}
+.hco{
+    color: #fff;
+    position: relative;
+}
+.hco h2{
+    font-size: 30px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.hco p{
+    font-size: 16px;
+    margin: 0 0 26px;
+}
+.hco p::after{
+    content: "";
+    position: absolute;
+    width: 130px;
+    border: 2px solid red;
+    top: 67px;
+    left: 475px;
+}
+button{
+    background-color: #e41f05;
+    color: #fff;
+    outline: 0;
+    width: 140px;
+    padding: 1px;
+    border-radius: 4px;
+    margin: 20px 0 20px -25px;
+}
+/* -------- */
+.container-fluid-1{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.call{
+    margin: 0 10px 0 10px;
+    overflow: hidden;
+}
+.sph2{
+    padding: 50px 0 30px 0 ;
+}
+.sph2 h2{
+    font-size: 27px;
+    line-height: normal;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+    position: relative;
+    color: black;
+}
+.sph2 h2::after{
+    content: "";
+    width: 150px;
+    position: absolute;
+    border: 3px solid red;
+    top: 41px;
+    left: 470px;
+}
+.owl-content{
+    padding: 10px 0 10px 0;
+    border: 1px solid #cccccc52;
+}
+.owl-content h4{
+    margin-bottom: 5px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+.call:hover h4{
+    color: red;
+    transition: 0.5s;
+}
+.call{
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.06);
+}
+/* --------------- */
+@media (min-width: 320px) and (max-width:359px){
+   .hco h2{
+    font-size: 13px;
+   }
+   .hco p{
+    font-size: 10px;
+   }
+   .hco p::after{
+    left: 68px;
+   }
+   .sph2 h2::after{
+    left: 68px;
+    top: 69px;
+   }
+}
+@media (min-width: 360px) and (max-width:374px){
+    .hco h2{
+        font-size: 13px;
+       }
+       .hco p{
+        font-size: 10px;
+       }
+       .hco p::after{
+        left: 90px;
+    }
+    .sph2 h2::after{
+        left: 90px;
+        top: 69px;
+       }
+}
+@media (min-width: 375px) and (max-width:410px){
+    .hco h2{
+        font-size: 13px;
+       }
+       .hco p{
+        font-size: 10px;
+       }
+       .hco p::after{
+        left: 93px;
+    }
+    .sph2 h2::after{
+        left: 93px;
+        top: 48px;
+    }
+}
+@media (min-width: 411px) and (max-width: 575px) { 
+    .hco h2{
+        font-size: 13px;
+       }
+       .hco p{
+        font-size: 10px;
+       }
+       .hco p::after{
+        left: 118px;
+    }
+    .sph2 h2::after{
+        left: 118px;
+        top: 47px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+    .hco p::after{
+        left: 200px;
+        top: 56px;
+    }
+    .sph2 h2::after{
+        left: 200px;
+        top: 43px;
+    }
+}
+@media(min-width: 768px) and (max-width: 991px) {
+    .hco p::after{
+        left: 268px;
+    }
+    .sph2 h2::after{
+        left: 268px;
+        top: 50px;
+       }
+} 
+@media (min-width: 992px) and (max-width: 1199px){ 
+    .hco p::after{
+        left: 395px;
+    }
+    .sph2 h2::after{
+        left: 385px;
+        top: 46px;
+       }
+}

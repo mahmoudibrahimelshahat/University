@@ -1,0 +1,94 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="head">
+                    <h2>OUR LATEST NEW</h2>
+                </div>
+
+                <div class="all">
+                    <div class="row">
+                        <img src="assets/photos/9.jpg">
+                        <div class="media-cont">
+                            <span>June 21, 2020 </span>
+                            <h4>While the lovely valley <br> team work</h4>
+                            <button mat-button>READ MORE</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="assets/photos/10.jpg">
+                        <div class="media-cont">
+                            <span>June 21, 2020 </span>
+                            <h4>I should be incapable of <br> drawing </h4>
+                            <button mat-button>READ MORE</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="assets/photos/11.jpg">
+                        <div class="media-cont">
+                            <span>June 21, 2020 </span>
+                            <h4>I must explain to you how <br> all this idea</h4>
+                            <button mat-button>READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="head">
+                    <h2>OUR LATEST EVENTS
+                    </h2>
+                </div>
+                <div class="all2">
+                    <div class="row">
+                        <div class="number">
+                           <span class="num"> 05</span>
+                            <br>
+                            <span class="date">sep</span>
+                        </div>
+                        <div class="media-cont">
+                           <a href="#"><h2>Eshkool Gala Day For Kids </h2></a> 
+                            <p>Event Description. A party is a gathering of <br> people who have been invited by a host for the <br> purposes of…
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="number">
+                            <span class="num"> 10</span>
+                             <br>
+                             <span class="date">AUG</span>
+                         </div>                     
+                         <div class="media-cont">
+                            <a href="#"><h2>Kids Study Tour 2020. </h2></a>
+                            <p>Event Description. A party is a gathering of <br> people who have been invited by a host for the <br> purposes of…
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="number">
+                            <span class="num"> 15</span>
+                             <br>
+                             <span class="date">AUG</span>
+                         </div>                   
+                         <div class="media-cont">
+                            <a href="#"><h2>Kids Drawing Content </h2></a>
+                            <p>Event Description. A party is a gathering of <br> people who have been invited by a host for the <br> purposes of…
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------- -->
+<div class="container-fluid-1">
+    <div class="container">
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let item of items">
+                <div class="call">
+                    <img [src]="item.img">
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>

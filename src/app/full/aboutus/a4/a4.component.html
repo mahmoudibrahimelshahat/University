@@ -1,0 +1,51 @@
+<div class="container-fluid text-center">
+    <div class="container">
+        <div class="sph2 text-center">
+            <h2 class="primary-color">OUR BRANCHES  </h2>
+            <p>Considering desire as primary motivation for the generatio.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-3 az">
+                <img src="assets/about/a7.png">
+                <span>01</span>
+                <h4>Australia</h4>
+                <p>503 Old Buffalo Street <br>
+                    Northwest City #205, Australia</p>
+            </div>
+            <div class="col-md-3 az">
+                <img src="assets/about/a8.png">
+                <span>02</span>
+                <h4>China</h4>
+                <p>503 Old Buffalo Street <br>
+                    Northwest City #205, Australia</p>
+            </div>
+            <div class="col-md-3 az">
+                <img src="assets/about/a9.png">
+                <span>03</span>
+                <h4>India</h4>
+                <p>503 Old Buffalo Street <br>
+                    Northwest City #205, Australia</p>
+            </div>
+            <div class="col-md-3">
+                <img src="assets/about/a10.png">
+                <span>04</span>
+                <h4>United States
+                </h4>
+                <p>503 Old Buffalo Street <br>
+                    Northwest City #205, Australia</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------ -->
+<div class="container-fluid-1">
+    <div class="container">
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let item of items">
+                <div class="call">
+                    <img [src]="item.img">
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>

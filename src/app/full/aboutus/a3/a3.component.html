@@ -1,0 +1,29 @@
+<div class="container-fluid text-center">
+<div class="container">
+    <div class="hco">
+        <h2>WEB DESIGN & DEVLOPMENT COURSE</h2>
+        <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.</p>
+    </div>
+    <button mat-button>JOIN NOW</button>
+</div>
+</div>
+<!-- -------- -->
+<div class="container-fluid-1">
+    <div class="container text-center">
+        <div class="sph2 text-center">
+            <h2 class="primary-color">OUR EXPERIENCED STAFFS </h2>
+            <p>Considering desire as primary motivation for the generation of narratives is a useful concept.</p>
+        </div>
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let item of items">
+                <div class="call">
+                    <img [src]="item.img" alt="">
+                    <div class="owl-content">
+                        <h4>{{item.title}}</h4>
+                        <span>{{item.titlesmall}}</span>
+                    </div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>

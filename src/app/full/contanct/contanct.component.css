@@ -1,0 +1,74 @@
+.container-fluid{
+    background-image: url('src/assets/about/a1.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 186px;
+    /* padding-bottom: 125px; */
+}
+.title{
+    margin: 80px 0 100px;
+    font-size: 36px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.linkk ul{
+    list-style: none;
+    color: #fff;
+    display: inline-flex;
+}
+.linkk li{
+    padding-right: 10px;
+}
+.slash{
+    padding-top: 7px;
+}
+.active{
+    color: red;
+}
+a{
+    color: #fff;
+}
+.kkk:hover{
+    color: red;
+    transition: 0.5s;
+}
+/* -------------- */
+.container-fluid-1{
+    margin-top: 80px;
+}
+.map{
+    margin-bottom: 50px;
+}
+.all{
+    border: 1px solid #F0F0F0;
+    background: #F0F0F0;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.all i{
+    font-size: 40px;
+    color: red;
+    margin-bottom: 15px;
+}
+.all h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+textarea{
+    max-height: 346px;
+    min-height: 300px;
+    width: 100%;
+}
+/* ------------- */
+.container-fluid-4
+{
+    background-color: #F2F2F2;
+    padding-bottom: 200px;
+    padding-top: 50px;
+    
+}
+.container-fluid-4 img{
+    width: 150px;
+}

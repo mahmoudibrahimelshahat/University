@@ -1,0 +1,206 @@
+.container-fluid{
+    background-image: url('src/assets/photos/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+.title{
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 50px;
+    font-weight: 500;
+    color: #fff;
+}
+.banner-title{
+        margin: 0 0 6px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 82px;
+        line-height: 1.1;
+        letter-spacing: 5px;
+        color: #fff;
+}
+.banner-title span{
+    display: block;
+    line-height: 1;
+}
+button{  
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 15px 45px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #fff;
+    outline: none;
+    transition: 0.4s;
+}
+button:hover{
+    background: #ffffff;
+    color: #ff3115;
+}
+.content{
+    padding-top: 220px;
+    padding-bottom: 210px;
+}
+.circle{
+    position: absolute;
+    bottom: 150px;
+    left: 500px;
+}
+/* --------- */
+.container-fluid-1{
+    margin: 100px 0 100px 0;
+}
+.full{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.full-con{
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    left: 70px;
+    transition: 0.5s;
+}
+.full-con svg{
+width: 40px;
+padding-bottom: 15px;
+color: red;
+visibility: hidden;
+}
+.full-con h4{
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+.full-con a{
+    color: #fff;
+    text-decoration: none;
+}
+.full:hover + .full-con{
+    bottom: 60px;
+    transition: 0.5s;
+}
+.full:hover + .full-con svg{
+    visibility: visible;
+}
+.full-con:hover{
+    bottom: 60px;
+    transition: 0.5s;
+}
+.full-con:hover svg{
+    visibility: visible;
+}
+.full::before{
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+}
+
+.row>.col-md-4 {
+    display: inline-block;
+    width: 100%;
+    float: none;
+}
+span{
+    display: block;
+    font-size: 18px;
+    line-height: 34px;
+    color: #ff3115;
+    font-weight: 600;
+}
+.content-part h2{
+    font-size: 30px;
+    line-height: 40px;
+    color: #212121;
+    font-weight: 700;
+    margin: 0;
+}
+.pb-20 {
+    font-size: 16px;
+    line-height: 27px;
+    color: #505050;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.pb-30{
+    font-size: 16px;
+    line-height: 27px;
+    color: #505050;
+    margin: 0;
+}
+.readon2 {
+    font-size: 14px;
+    border: 1px solid #ff3115;
+    background: #ff3115;
+    display: inline-block;
+    padding: 0 35px;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 35px;
+    text-decoration: none;
+}
+.readon2:hover{
+    transition: 0.5s;
+    background-color: #E41F05;
+}
+/* ------------ */
+@media (min-width: 320px) and (max-width: 575px){ 
+    .banner-title{
+        font-size: 33px;
+    }
+}
+@media (min-width: 360px) and (max-width: 575px){ 
+    .full-con{
+        left: 86px;
+    }
+}
+@media(min-width: 768px) and (max-width: 991px) {
+.full-con{
+    bottom: 16px;
+    left: 36px;
+}
+.full-con h4{
+    font-size: 12px;
+}
+.full-con:hover{
+    bottom:30px ;
+}
+.full:hover + .full-con svg{
+    bottom: 30px;
+}
+.full:hover +.full-con{
+    bottom: 30px;
+}
+} 
+@media (min-width: 992px) and (max-width: 1199px){ 
+    .full-con{
+        bottom: 16px;
+        left: 69px;
+    }
+    .full-con h4{
+        font-size: 12px;
+    }
+    .full-con:hover{
+        bottom:30px ;
+    }
+    .full:hover + .full-con svg{
+        bottom: 30px;
+    }
+    .full:hover +.full-con{
+        bottom: 30px;
+    }
+}

@@ -1,0 +1,119 @@
+.container-fluid{
+    position: fixed;
+    z-index: 3;
+}
+.container-fluid.fixed-navbar {
+    background-color: black;
+}
+.bg-light{
+    background-color: transparent !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+} 
+ .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active,
+ .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+/* error */
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active,
+ .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link :hover{
+    color:red
+}
+li a.active{
+    color: red;
+}
+/* error */
+.nav-item a{
+    color: #fff;
+}
+.nav-item a:hover{
+    color:red
+}
+.kk a{
+ color: #fff;
+}
+.kk a:hover{
+    color:red
+}
+.kk{
+    position: relative;
+}
+.ulkk{
+    position: fixed;
+    margin-top: 12px;
+    visibility: collapse; 
+    z-index: 389;
+}
+.ulkk ul{
+    padding: 10px 12px;
+    border: 1px solid;
+    list-style: none;
+    -webkit-transition: all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -ms-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+    background-color: #111111;
+}
+.ulkk a{
+    text-decoration: none;
+    color: #fff;
+}
+.ulkk li:not(:last-child) {
+    padding: 6px 50px 10px 0px;
+    border-bottom: 1px solid #645050;
+}
+.ulkk a:hover{
+    color: red;
+}
+.kk:hover .ulkk{
+    visibility: visible; 
+}
+.search i{
+    padding-left: 16px;
+    color: red;
+}
+.search{
+    padding: 7px 0 0 0 !important;
+}
+.nav-item{
+    padding: 0 13px 0 13px;
+    text-transform: uppercase;
+}
+.navbar-light .navbar-toggler-icon {
+    background-color: #c60909;
+}
+button:focus {
+    outline: none;
+}
+.navbar-inverse{
+    background-color: black;
+}
+/* --------- */
+@media(min-width:320px) and (max-width:336px) {
+    button{
+        margin-left: 200px;
+    }   
+    .ulkk{
+        margin-top: -74px;
+        margin-left: 80px;
+    }
+}
+@media (min-width: 321px) and (max-width: 575px){ 
+    .ulkk{
+        margin-top: -74px;
+        margin-left: 80px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) { 
+        .ulkk{
+        margin-top: -74px;
+        margin-left: 80px;
+    }
+}
+@media(min-width: 768px) and (max-width: 991px) {
+    .ulkk{
+        margin-top: -74px;
+        margin-left: 80px;
+    }
+} 

@@ -1,0 +1,140 @@
+.search h5{
+    font-size: 19px;
+    font-weight: 700;
+}
+.search input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    outline: 0;
+    border-radius: 10px;
+}
+.cat{
+    margin-top: 20px;
+}
+.cat h1{
+    font-size: 21px;
+    font-weight: 600;
+}
+.catcontent{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+.s1{
+    margin-right: 10px;
+}
+.catcontent h5{
+    margin-right: 90px;
+    font-size: 15px;
+}
+.catcontent:hover{
+    color: red;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.latest{
+margin-top: 40px;
+}
+.latest-content h5{
+    font-size: 15px;
+    font-weight: 600;
+}
+.latest-content:hover h5{
+    color: red;
+    transition: 0.5s;
+}
+.care{
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+.care img{
+    margin-right: 10px;
+}
+.latest h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.small-content{
+    display: flex;
+}
+.po{
+    margin-right: 45px;
+}
+.po2{
+    display: flex;
+}
+.po2 span{
+    padding-top: 4px;
+    color: red;
+    font-weight: 600;
+    margin-left: 9px;
+}
+.care2{
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: none;
+}
+.care2 img{
+    margin-right: 10px;
+}
+.mat-standard-chip{
+    border-radius: 8px;
+    color: black;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.mat-standard-chip:hover{
+    color: #fff;
+    background-color: red;
+    border: none;
+    transition: 0.5s;
+}
+.tags h5{
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+/* ------------- */
+@media (min-width: 320px) and (max-width:359px){
+.po{
+    margin-right: 10px;
+}
+}
+@media (min-width: 360px) and (max-width:374px){
+
+}
+@media (min-width: 375px) and (max-width:410px){
+
+}
+@media (min-width: 411px) and (max-width: 575px) { 
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+
+}
+@media(min-width: 768px) and (max-width: 991px) {
+    .catcontent h5{
+        margin-right: 12px;
+       }
+    .small-content{
+        display: block;
+    }
+    .po{
+        margin-right: 0;
+    }
+} 
+@media (min-width: 992px) and (max-width: 1199px){ 
+    .catcontent h5{
+        margin-right: 12px;
+       }
+       .po{
+        margin-right: 11px;
+       }
+}
